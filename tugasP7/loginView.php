@@ -20,15 +20,23 @@
           </h6>
         </div>
         <form method="POST" action="commandPHP/loginProcess.php">
-          <div class="mb-4">
-            <label for="exampleInputEmail1" class="form-label">Username*</label>
-            <input type="text" class="form-control" name="username" placeholder="Input your username here" required />
+          <!-- Username Input -->
+          <label for="username" class="form-label">Username</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+              </svg></span>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Input your username here" required />
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password*</label>
-            <input type="password" class="form-control" name="password" placeholder="Input your password" required />
+          <!-- Password Input -->
+          <label for="password" class="form-label">Password</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
+                <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2z" />
+              </svg></span>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Input your password" required />
           </div>
-          <div class="d-flex justify-content-between">
+          <!-- <div class="d-flex justify-content-between">
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" />
               <label class="form-check-label" for="exampleCheck1">Remember me</label>
@@ -36,9 +44,9 @@
             <div>
               <a href="#" class="forgotpassword">Forgot Password?</a>
             </div>
-          </div>
-          <div class="d-grid mt-3">
-            <button type="submit" class="btn btn-success btn-login">
+          </div> -->
+          <div class="d-grid mt-5">
+            <button type="submit" class="btn btn-success btn-login" name="Login">
               Login
             </button>
           </div>
