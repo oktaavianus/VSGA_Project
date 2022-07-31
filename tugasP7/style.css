@@ -3,9 +3,22 @@
 body, html {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
-  background-color: white;
   height: 100%;
   font-weight: 700;
+}
+
+.banner {
+  background: url("https://images.unsplash.com/photo-1591510669755-5e6dbb1ca33d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80") no-repeat center center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 180px;
+}
+
+.bannerRegister{
+  background: url("https://images.unsplash.com/photo-1591510669755-5e6dbb1ca33d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80") no-repeat center center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 160px;
 }
 
 .container {
@@ -14,6 +27,7 @@ body, html {
   align-items: center;
   justify-content: center;
   border-color: #198754;
+  opacity: 85%;
 }
 
 .login-form{
