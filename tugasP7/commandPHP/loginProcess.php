@@ -22,12 +22,14 @@ function console_log($output, $with_script_tags = true) {
   echo $js_code;
 }
 // console_log($hashPass);
-// console_log($dbPassword);
+// console_log($dataUser);
 
 // $testing = password_verify($password, $dataUser['password']);
 //* menjalankan query
 if(mysqli_num_rows($fetchUser) == 1) {
   if(password_verify($password, $dbPassword)) {
+    session_start();
+    $_SESSION['username'] = $dataUser['username'];
     header('location: ../homeView.php');
   } else {
     header('location: ../loginView.php?msg=Wrong Username or Password');
