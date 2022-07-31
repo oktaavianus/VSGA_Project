@@ -30,10 +30,10 @@ if(mysqli_num_rows($fetchUser) == 1) {
   if(password_verify($password, $dbPassword)) {
     header('location: ../homeView.php');
   } else {
-    header('location: ../loginView.php?msg=Password Salah');
+    header('location: ../loginView.php?msg=Wrong Username or Password');
   }
 } else {
-  header('location: ../loginView.php?msg=Username Salah');
+  header('location: ../loginView.php?msg=Wrong Username or Password');
 }
 
 

@@ -13,6 +13,13 @@
   <div class="container">
     <div class="card login-form">
       <div class="card-body">
+      <?php
+      if(isset($_GET['msg'])){
+        ?> 
+        <div class="alert alert-danger text-center mb-0 mt-0" role="alert">
+          <strong><?php echo $_GET['msg'];?></strong>
+        </div>
+        <?php } ?>
         <div class="text-center">
           <h2 class="card-title">Welcome to <br> LOGO COMPANY</h2>
           <h6 class="card-subtitle text-muted mb-5 fw-bolder">
